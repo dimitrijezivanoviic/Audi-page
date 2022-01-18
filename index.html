@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fab0fc8bb7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://audimediacenter-a.akamaihd.net/system/production/media/1282/images/bde751ee18fe149036c6b47d7595f6784f8901f8/AL090142_full.jpg?1581961854"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+  </head>
+  <body>
+    <main>
+      <section class="carousel">
+        <header class="header">
+          <a href="#">
+            <img class="logo" alt="Audi logo" src="img/logo.png" />
+          </a>
+
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li><a class="main-nav-link active" href="#">Homepage</a></li>
+              <li>
+                <a class="main-nav-link" id="about-us" href="#about"
+                  >About us</a
+                >
+                <ul class="second-ul">
+                  <li><a href="">Our team</a></li>
+                  <li><a href="">Leadership</a></li>
+                  <li><a href="">Partners</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="main-nav-link" href="#pricing">Products</a>
+              </li>
+              <li>
+                <a class="main-nav-link nav-cta" href="#contact">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="btn-mobile-nav">
+            <ion-icon
+              class="icon-mobile-nav"
+              id="open_mobile_nav"
+              name="menu-outline"
+            ></ion-icon>
+            <ion-icon
+              class="icon-mobile-nav"
+              id="close_mobile_nav"
+              name="close-outline"
+            ></ion-icon>
+          </button>
+        </header>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="img/header-img.jpg" class="slideshow-image" />
+            <div class="slideshow-description container">
+              <h6>New arrival</h6>
+              <h1>Second slide.</h1>
+              <p>
+                The Audi Q8 offers a unique performance that blends sport and
+                utility into a momentous SUV design.
+              </p>
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img src="img/header-img.jpg" class="slideshow-image" />
+            <div class="slideshow-description container">
+              <h6>New arrival</h6>
+              <h1>Expectations put limitations on possibilities.</h1>
+              <p>
+                The Audi Q8 offers a unique performance that blends sport and
+                utility into a momentous SUV design.
+              </p>
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+          <a class="next" onclick="plusSlides(1)"
+            ><i class="fas fa-chevron-right"></i
+          ></a>
+        </div>
+      </section>
+
+      <section class="section-about" id="about">
+        <div class="container grid grid--2-cols grid--center-v">
+          <div class="about-img-box">
+            <img
+              src="../img/car-section.png"
+              class="about-img"
+              alt="iPhone app
+                  preferences selection screen"
+            />
+          </div>
+          <div class="about-text-box">
+            <h6>About Q8</h6>
+            <h1 class="about-heading">
+              Welcome to the 8th dimension. The new Audi Q8
+            </h1>
+            <h5>
+              With its imposing Singleframe in octagonal design, the Audi Q8
+              presents the new face of the Q family.
+            </h5>
+            <p class="about-description">
+              The radiator grille combines with the forward-mounted spoiler and
+              the strongly contoured air inlets to underline its confident look.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-featured">
+        <div class="container featured-grid grid--2-cols margin-bottom-md">
+          <div class="featuerd-info">
+            <h6>Featured</h6>
+            <h1>Brand new The Audi RSQ8</h1>
+            <p>
+              The RS Q8 gives you the choice: depending on the selected
+              equipment, its looks are even bolder and sportier to suit your
+              personal ambitions.
+            </p>
+            <div class="featured-numbers-grid grid--3-cols">
+              <div class="featured-numbers-item">
+                <h4>Power output</h4>
+                <h2>441 kw</h2>
+                <h5>(600 hp)</h5>
+              </div>
+              <div class="featured-numbers-item">
+                <h4>Acceleration</h4>
+                <h2>3.8</h2>
+                <h5>seconds</h5>
+              </div>
+              <div class="featured-numbers-item">
+                <h4>Torque</h4>
+                <h2>800</h2>
+                <h5>Nm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="featured-info"></div>
+        </div>
+      </section>
+
+      <section class="section-pricing" id="pricing">
+        <div id="blur" class="background-modal">
+          <div class="container center-text">
+            <h2 class="heading-secondary">You might take a look...</h2>
+            <ul class="cars-list">
+              <li><a class="cars-list-item active_cars" href="#">All</a></li>
+              <li><a class="cars-list-item" href="#">Hatchback</a></li>
+              <li>
+                <a class="cars-list-item" href="#">Sportback</a>
+              </li>
+              <li><a class="cars-list-item" href="#">Limousine</a></li>
+              <li><a class="cars-list-item" href="#">SUV</a></li>
+              <li><a class="cars-list-item" href="#">Cabrio</a></li>
+            </ul>
+          </div>
+          <div class="container pricing-grid grid--4-cols margin-bottom-md">
+            <div class="pricing-plan" id="1">
+              <header class="plan-header">
+                <img src="img/car-2.png" alt="" />
+                <p>5 seats, 4 Doors</p>
+                <h2>Audi Q3 2020</h2>
+                <p
+                  onclick="editFunction('img/car-2.png','5 seats, 4 Doors','Audi Q3 2020','29.999')"
+                  class="configurate"
+                >
+                  Configurator
+                </p>
+              </header>
+              <ul class="list">
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Includes 300 free km</span>
+                </li>
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Theft Protection</span>
+                </li>
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Non Refundable</span>
+                </li>
+              </ul>
+              <div class="pricing-price-info">
+                <div class="price-info">
+                  <p>Starting from</p>
+                  <h2><span>29.999</span> €</h2>
+                </div>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="pricing-plan" id="2">
+              <header class="plan-header">
+                <img src="img/car-3.png" alt="" />
+                <p>5 seats, 4 Doors</p>
+                <h2>Audi A4 2020</h2>
+                <p
+                  onclick="editFunction('img/car-3.png','5 seats, 4 Doors','Audi A4 2020','24.999')"
+                  class="configurate"
+                >
+                  Configurator
+                </p>
+              </header>
+              <ul class="list">
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Includes 300 free km</span>
+                </li>
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Theft Protection</span>
+                </li>
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Non Refundable</span>
+                </li>
+              </ul>
+              <div class="pricing-price-info">
+                <div class="price-info">
+                  <p>Starting from</p>
+                  <h2><span>24.999</span> €</h2>
+                </div>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="pricing-plan pricing-plan--new" id="3">
+              <header class="plan-header">
+                <img src="img/car-1.png" alt="" />
+                <p>5 seats, 4 Doors</p>
+                <h2>Audi A3 2020</h2>
+                <p
+                  onclick="editFunction('img/car-1.png','5 seats, 4 Doors','Audi A3 2020','19.999')"
+                  class="configurate"
+                >
+                  Configurator
+                </p>
+              </header>
+              <ul class="list">
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Includes 300 free km</span>
+                </li>
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Theft Protection</span>
+                </li>
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Non Refundable</span>
+                </li>
+              </ul>
+              <div class="pricing-price-info">
+                <div class="price-info">
+                  <p>Starting from</p>
+                  <h2><span>19.999</span> €</h2>
+                </div>
+                <button>Buy Now</button>
+              </div>
+            </div>
+            <div class="pricing-plan pricing-plan--new" id="4">
+              <header class="plan-header">
+                <img src="img/car-4.png" alt="" />
+                <p>5 seats, 4 Doors</p>
+                <h2>Audi Q7 2020</h2>
+                <p
+                  onclick="editFunction('img/car-4.png','5 seats, 4 Doors','Audi Q7 2020', '39.999')"
+                  class="configurate"
+                >
+                  Configurator
+                </p>
+              </header>
+              <ul class="list">
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Includes 300 free km</span>
+                </li>
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Theft Protection</span>
+                </li>
+                <li class="list-item">
+                  <img src="img/correct.png" alt="" />
+                  <span>Non Refundable</span>
+                </li>
+              </ul>
+              <div class="pricing-price-info">
+                <div class="price-info">
+                  <p>Starting from</p>
+                  <h2><span>39.999</span> €</h2>
+                </div>
+                <button>Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-container" id="modal-popup">
+          <div class="modal-relative">
+            <div class="modal-grid">
+              <div class="modal-car-info">
+                <img id="modal-image" alt="" />
+                <p id="modal-seats"></p>
+                <h1 id="modal-name"></h1>
+                <div class="modal-price-starting">
+                  <p id="modal-starting">Starting from</p>
+
+                  <h3 class="heading-h3" id="modal-price"></h3>
+                </div>
+              </div>
+              <div class="modal-configurator">
+                <div class="configurator-text">
+                  <h3>Audi Configurator</h3>
+                  <p>Create your own audi.</p>
+                </div>
+
+                <div class="configurator-item">
+                  <label class="configurate-checkbox">
+                    <input
+                      type="checkbox"
+                      class="checkbox__input"
+                      id="checkbox__input"
+                      value="0"
+                    />
+                    <div class="checkbox__box"></div>
+                    48-V electrical system
+                  </label>
+
+                  <h3>0,/EUR</h3>
+                </div>
+                <div class="configurator-item">
+                  <label class="configurate-checkbox">
+                    <input
+                      type="checkbox"
+                      class="checkbox__input"
+                      id="checkbox__input"
+                      value="278.60"
+                    />
+                    <div class="checkbox__box"></div>
+                    Adaptive air suspension - sport
+                  </label>
+                  <h3>278,60 EUR</h3>
+                </div>
+                <div class="configurator-item">
+                  <label class="configurate-checkbox">
+                    <input
+                      type="checkbox"
+                      class="checkbox__input"
+                      id="checkbox__input"
+                      value="558.78"
+                    />
+                    <div class="checkbox__box"></div>
+                    Acoustic side windows - optional
+                  </label>
+                  <h3>558,78 EUR</h3>
+                </div>
+                <div class="configurator-item">
+                  <label class="configurate-checkbox">
+                    <input
+                      type="checkbox"
+                      class="checkbox__input"
+                      id="checkbox__input"
+                      value="558.78"
+                    />
+                    <div class="checkbox__box"></div>
+                    Acoustic side windows - optional
+                  </label>
+                  <h3>558,78 EUR</h3>
+                </div>
+                <div class="configurator-item">
+                  <label class="configurate-checkbox">
+                    <input
+                      type="checkbox"
+                      class="checkbox__input"
+                      id="checkbox__input"
+                      value="558.78"
+                    />
+                    <div class="checkbox__box"></div>
+                    Acoustic side windows - optional
+                  </label>
+                  <h3>558,78 EUR</h3>
+                </div>
+              </div>
+            </div>
+            <p class="modal-paragraph" id="modal-paragraph">
+              <i class="fas fa-times"></i>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-conctact" id="contact">
+        <div class="container grid grid--2-cols">
+          <div class="contact-text">
+            <h6>Contact us</h6>
+            <h1>If you have any questions, don't hesitate to contact us.</h1>
+          </div>
+          <div class="contact-form">
+            <form>
+              <input
+                type="text"
+                class="contact-field"
+                placeholder="Enter your name"
+              />
+              <input
+                type="email"
+                class="contact-field"
+                placeholder="Enter your email"
+              />
+              <textarea
+                class="contact-field area"
+                placeholder="Your message"
+              ></textarea>
+              <button class="contact-button" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <img src="img/contact.png" class="contact-image" alt="" />
+        <div class="footer-section">
+          <p class="footer-paragraph">©2020 FSD. ALL RIGHTS RESERVED</p>
+          <ul class="footer-list">
+            <li>Terms of agreement</li>
+            <li>Privacy policy</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

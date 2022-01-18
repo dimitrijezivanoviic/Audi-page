@@ -1,0 +1,462 @@
+/*MOBILNI TELEFON*/
+@media screen and (max-width: 767px) {
+  .carousel .header {
+    padding: 3rem 3rem 0rem 3rem !important;
+    height: auto;
+  }
+  .carousel .header .btn-mobile-nav {
+    display: block;
+    z-index: 1;
+  }
+  .carousel .header .logo {
+    margin-bottom: 0;
+  }
+  .carousel .header .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .carousel .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    z-index: 1;
+  }
+  .carousel .nav-open .main-nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem !important;
+  }
+  .carousel .nav-open .main-nav-list .main-nav-link {
+    color: #212121 !important;
+  }
+  .carousel .nav-open .main-nav-list .main-nav-link.active {
+    border-bottom: 2px solid #fa292c !important;
+    color: #212121 !important;
+    width: auto !important;
+  }
+  .carousel .nav-open .main-nav-list .main-nav-link.nav-cta {
+    background-color: #212121 !important;
+    color: #fff !important;
+  }
+  .carousel .nav-open .btn-mobile-nav #open_mobile_nav {
+    display: none;
+  }
+  .carousel .nav-open .btn-mobile-nav #close_mobile_nav {
+    display: block;
+  }
+  .slideshow-container .mySlides .slideshow-description {
+    width: auto !important;
+    left: 0 !important;
+  }
+  .slideshow-container .mySlides .slideshow-description h1 {
+    font-size: 2.4rem !important;
+    line-height: normal !important;
+  }
+  .slideshow-container .mySlides .slideshow-description p {
+    padding: 1rem 0rem !important;
+    width: auto !important;
+    font-size: 1.4rem;
+    line-height: normal !important;
+    color: #aea8a8;
+  }
+  .slideshow-container .mySlides .slideshow-description p::after {
+    content: none !important;
+  }
+  .section-about {
+    padding: 15rem 0rem;
+  }
+  .section-about .grid--2-cols {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .section-about .grid--2-cols .about-img-box .about-img {
+    width: 80%;
+  }
+  .section-about .grid--2-cols .about-img-box::before {
+    width: 55%;
+    padding-bottom: 80%;
+  }
+  .section-about .grid--2-cols .about-img-box::after {
+    bottom: -5rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  .section-about .grid--2-cols .about-text-box {
+    padding-top: 5rem;
+  }
+  .section-about .grid--2-cols .about-text-box h1 {
+    font-size: 2.2rem;
+    line-height: normal;
+    margin-bottom: 2.4rem;
+  }
+  .section-about .grid--2-cols .about-text-box h5 {
+    font-size: 1.6rem;
+  }
+  .section-about .grid--2-cols .about-text-box p {
+    font-size: 1.4rem;
+  }
+  .section-featured {
+    padding: 10rem 0rem;
+    background-size: cover;
+  }
+  .section-featured .grid--2-cols {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .section-featured .grid--2-cols .featuerd-info h1 {
+    font-size: 2.2rem;
+  }
+  .section-featured .grid--2-cols .featuerd-info .featured-numbers-grid {
+    gap: 1.2rem;
+  }
+  .section-featured .grid--2-cols .featuerd-info .featured-numbers-grid .featured-numbers-item {
+    padding: 0.8rem;
+  }
+  .section-pricing .background-modal .container h2 {
+    font-size: 2.2rem;
+  }
+  .section-pricing .background-modal .container .cars-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .section-pricing .background-modal .container .cars-list .cars-list-item {
+    padding-bottom: 0.5rem;
+  }
+  .section-pricing .background-modal .grid--4-cols {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .section-pricing .background-modal .grid--4-cols .pricing-plan {
+    width: auto;
+  }
+  .section-pricing .popup-container {
+    width: auto;
+  }
+  .section-pricing .popup-container .modal-relative .modal-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px solid #f1f1f5;
+    border-radius: 2rem 2rem 0rem 0rem;
+  }
+  .section-pricing .popup-container .modal-relative .modal-grid .modal-car-info {
+    border-radius: 2rem 2rem 0rem 0rem;
+  }
+  .section-pricing .popup-container .modal-relative .modal-grid .modal-configurator {
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .section-conctact {
+    padding: 9.6rem 0rem;
+  }
+  .section-conctact .contact-image {
+    display: none;
+  }
+  .section-conctact .grid--2-cols {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    row-gap: 4.8rem;
+  }
+  .section-conctact .grid--2-cols .contact-text h1 {
+    font-size: 2.4rem;
+  }
+  .section-conctact .grid--2-cols .contact-form {
+    padding: 3.6rem;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-field {
+    padding: 1.4rem;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-field::-webkit-input-placeholder, .section-conctact .grid--2-cols .contact-form .contact-field.area::-webkit-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-field:-ms-input-placeholder, .section-conctact .grid--2-cols .contact-form .contact-field.area:-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-field::-ms-input-placeholder, .section-conctact .grid--2-cols .contact-form .contact-field.area::-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-field::placeholder, .section-conctact .grid--2-cols .contact-form .contact-field.area::placeholder {
+    font-size: 1.4rem;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-button {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.4rem;
+  }
+  .section-conctact .footer-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+    gap: 5rem;
+  }
+  .section-conctact .footer-section .footer-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*TABLET*/
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .carousel .header {
+    padding: 3rem 3rem 0rem 3rem !important;
+    height: auto;
+  }
+  .carousel .header .btn-mobile-nav {
+    display: block;
+    z-index: 1;
+  }
+  .carousel .header .logo {
+    margin-bottom: 0;
+  }
+  .carousel .header .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .carousel .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    z-index: 1;
+  }
+  .carousel .nav-open .main-nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem !important;
+  }
+  .carousel .nav-open .main-nav-list .main-nav-link {
+    color: #212121 !important;
+  }
+  .carousel .nav-open .main-nav-list .main-nav-link.active {
+    border-bottom: 2px solid #fa292c !important;
+    color: #212121 !important;
+    width: auto !important;
+  }
+  .carousel .nav-open .main-nav-list .main-nav-link.nav-cta {
+    background-color: #212121 !important;
+    color: #fff !important;
+  }
+  .carousel .nav-open .btn-mobile-nav #open_mobile_nav {
+    display: none;
+  }
+  .carousel .nav-open .btn-mobile-nav #close_mobile_nav {
+    display: block;
+  }
+  .slideshow-container .mySlides .slideshow-description {
+    width: auto !important;
+    left: 10% !important;
+  }
+  .slideshow-container .mySlides .slideshow-description h1 {
+    font-size: 3.6rem !important;
+    line-height: normal !important;
+  }
+  .slideshow-container .mySlides .slideshow-description p {
+    padding: 3.6rem !important;
+    width: 55% !important;
+    font-size: 1.6rem;
+    line-height: normal !important;
+    color: #aea8a8;
+  }
+  .slideshow-container .mySlides .slideshow-description p::after {
+    bottom: 60px !important;
+    left: 3rem !important;
+    width: 4.8rem !important;
+  }
+  .section-about {
+    padding: 20rem 0rem 15rem 0rem;
+  }
+  .section-about .grid--2-cols {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .section-about .grid--2-cols .about-img-box .about-img {
+    width: 60%;
+  }
+  .section-about .grid--2-cols .about-img-box::before {
+    width: 40%;
+    padding-bottom: 60%;
+  }
+  .section-about .grid--2-cols .about-text-box {
+    padding-top: 5rem;
+  }
+  .section-about .grid--2-cols .about-text-box h1 {
+    font-size: 3.2rem;
+    line-height: normal;
+    margin-bottom: 2.4rem;
+  }
+  .section-about .grid--2-cols .about-text-box h5 {
+    font-size: 1.8rem;
+  }
+  .section-about .grid--2-cols .about-text-box p {
+    font-size: 1.6rem;
+  }
+  .section-featured {
+    padding: 10rem 0rem;
+    background-size: cover;
+  }
+  .section-featured .grid--2-cols {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .section-featured .grid--2-cols .featuerd-info h1 {
+    font-size: 3.2rem;
+  }
+  .section-featured .grid--2-cols .featuerd-info .featured-numbers-grid {
+    gap: 1.2rem;
+  }
+  .section-featured .grid--2-cols .featuerd-info .featured-numbers-grid .featured-numbers-item {
+    padding: 0.8rem;
+  }
+  .section-pricing .background-modal .container h2 {
+    font-size: 3.2rem;
+  }
+  .section-pricing .background-modal .container .cars-list .cars-list-item {
+    padding-bottom: 0.5rem;
+  }
+  .section-pricing .background-modal .grid--4-cols {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .section-pricing .background-modal .grid--4-cols .pricing-plan {
+    width: auto;
+  }
+  .section-pricing .popup-container {
+    width: 85%;
+  }
+  .section-conctact {
+    padding: 9.6rem 0rem;
+  }
+  .section-conctact .grid--2-cols {
+    -webkit-column-gap: 4.8rem;
+            column-gap: 4.8rem;
+  }
+  .section-conctact .grid--2-cols .contact-text h1 {
+    font-size: 3.6rem;
+    line-height: normal;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-field {
+    padding: 1.4rem;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-field::-webkit-input-placeholder, .section-conctact .grid--2-cols .contact-form .contact-field.area::-webkit-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-field:-ms-input-placeholder, .section-conctact .grid--2-cols .contact-form .contact-field.area:-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-field::-ms-input-placeholder, .section-conctact .grid--2-cols .contact-form .contact-field.area::-ms-input-placeholder {
+    font-size: 1.4rem;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-field::placeholder, .section-conctact .grid--2-cols .contact-form .contact-field.area::placeholder {
+    font-size: 1.4rem;
+  }
+  .section-conctact .grid--2-cols .contact-form .contact-button {
+    padding: 0.9rem 1.8rem;
+    font-size: 1.4rem;
+  }
+  .section-conctact .footer-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+    gap: 5rem;
+  }
+  .section-conctact .footer-section .footer-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/*PRICING SECTION ZA BROJ AUTOMOBILA KOJI MOGU DA STANU*/
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .section-pricing .background-modal .grid--4-cols {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
+
+/*ZA PARAGRAPH ::AFTER DA UVEK BUDE U 3 REDA TEKST*/
+@media screen and (min-width: 1520px) {
+  .carousel .slideshow-container .mySlides .slideshow-description p {
+    width: 77%;
+  }
+}
+
+/*POPUP MODAL*/
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .section-pricing .popup-container {
+    width: 80%;
+  }
+}
+
+/*POMERANJE FOOTERA ZA VECE EKRANE*/
+@media screen and (min-width: 1441px) {
+  .section-conctact .footer-section {
+    padding-top: 10rem;
+  }
+}
+/*# sourceMappingURL=queries.css.map */
