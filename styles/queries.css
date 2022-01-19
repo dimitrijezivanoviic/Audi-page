@@ -89,7 +89,7 @@
     content: none !important;
   }
   .section-about {
-    padding: 15rem 0rem;
+    padding: 15rem 0rem 9.6rem 0rem;
   }
   .section-about .grid--2-cols {
     -ms-grid-columns: (1fr)[1];
@@ -457,6 +457,25 @@
 @media screen and (min-width: 1441px) {
   .section-conctact .footer-section {
     padding-top: 10rem;
+  }
+}
+
+/*TEKST U CAROUSELU ZA MOBILE S VELICINE*/
+@media screen and (max-width: 330px) {
+  .slideshow-container .mySlides .slideshow-description h1 {
+    font-size: 2rem !important;
+  }
+  .slideshow-container .mySlides .slideshow-description h6 {
+    margin-bottom: 1.2rem;
+  }
+}
+
+/*SKLANJANJE BACKGROUD COLORA ZA STRELICE ZA UREDJAJE MANJE OD TABLETA*/
+@media screen and (max-width: 767px) {
+  .slideshow-container .prev,
+  .slideshow-container .next {
+    background-color: transparent !important;
+    border: none !important;
   }
 }
 /*# sourceMappingURL=queries.css.map */

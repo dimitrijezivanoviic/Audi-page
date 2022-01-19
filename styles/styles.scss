@@ -55,6 +55,22 @@ body {
   align-items: center;
 }
 
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
+}
+
 h6 {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -116,6 +132,8 @@ h5 {
     }
 
     .main-nav {
+      /*OSTATAK*/
+
       .main-nav-list {
         list-style: none;
         display: flex;
@@ -165,6 +183,52 @@ h5 {
           &:active {
             background-color: #fa292c;
             border: none;
+          }
+        }
+
+        li {
+          position: relative;
+        }
+
+        li:hover > ul {
+          position: absolute;
+          top: 3rem;
+          display: block;
+          background-color: rgba(128, 128, 128, 0.4);
+          padding: 2rem;
+          z-index: 1;
+          border: 1px solid #5c5c5c;
+          border-top: 1px solid #fa292c;
+        }
+
+        .second-ul {
+          display: none;
+
+          li {
+            width: 11rem;
+            float: none;
+            display: list-item;
+            position: relative;
+
+            list-style-type: none;
+            padding: 1.5rem 0rem;
+            border-bottom: 1px solid #5c5c5c;
+
+            &:first-child {
+              padding-top: 0rem;
+            }
+
+            &:last-child {
+              border-bottom: none;
+              padding: 1.5rem 0rem 0rem 0rem;
+            }
+
+            a {
+              color: #fff;
+              text-decoration: none;
+              font-size: 1.4rem;
+              font-family: "Roboto Condensed";
+            }
           }
         }
       }
@@ -252,7 +316,7 @@ h5 {
 /* ABOUT SECTION */
 
 .section-about {
-  padding: 20rem 0;
+  padding: 15rem 0;
 
   .about-img-box {
     position: relative;
@@ -277,7 +341,7 @@ h5 {
     }
 
     &::after {
-      content: "A progresive desgin, a powerful engine.";
+      content: "A progressive desgin, a powerful engine.";
       position: absolute;
       bottom: -10rem;
       font-size: 1.4rem;
@@ -378,6 +442,14 @@ h5 {
 
   #blur.active-class {
     opacity: 0.3;
+  }
+
+  .heading-secondary {
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+    font-size: 3.6rem;
+    margin-bottom: 4.8rem;
   }
 
   .cars-list {
@@ -781,178 +853,4 @@ h5 {
       }
     }
   }
-}
-
-/*OSTATAK*/
-.heading-primary,
-.heading-secondary,
-.heading-tertiary {
-  font-weight: 700;
-  color: #333;
-  letter-spacing: -0.5px;
-}
-
-.heading-primary {
-  font-size: 5.2rem;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-
-.heading-secondary {
-  font-size: 3.6rem;
-  /* line-height: 1.2; */
-  margin-bottom: 4.8rem;
-}
-
-.heading-tertiary {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 3.2rem;
-}
-
-.subheading {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #cf711f;
-  text-transform: uppercase;
-  margin-bottom: 1.6rem;
-  letter-spacing: 0.75px;
-}
-
-.btn,
-.btn:link,
-.btn:visited {
-  display: inline-block;
-
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  transition: all 0.3s;
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-  color: #fff;
-}
-
-.btn--full:hover,
-.btn--full:active {
-  background-color: #cf711f;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #fdf2e9;
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-.btn--form {
-  background-color: #45260a;
-  color: #fdf2e9;
-  align-self: end;
-  padding: 1.2rem;
-}
-
-.btn--form:hover {
-  background-color: #fff;
-  color: #555;
-}
-
-.link:link,
-.link:visited {
-  display: inline-block;
-  color: #e67e22;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
-  transition: all 0.3s;
-}
-
-.link:hover,
-.link:active {
-  color: #cf711f;
-  border-bottom: 1px solid transparent;
-}
-
-.list-icon {
-  width: 3rem;
-  height: 3rem;
-  color: #e67e22;
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
-.margin-bottom-md {
-  margin-bottom: 4.8rem !important;
-}
-
-.center-text {
-  text-align: center;
-}
-
-strong {
-  font-weight: 500;
-}
-
-.main-nav ul ul {
-  display: none;
-}
-
-.main-nav li:hover > ul {
-  position: absolute;
-  top: 3rem;
-  display: block;
-  background-color: rgba(128, 128, 128, 0.4);
-  padding: 2rem;
-  z-index: 1;
-  border: 1px solid #5c5c5c;
-  border-top: 1px solid #fa292c;
-}
-
-.main-nav ul ul li {
-  width: 11rem;
-  float: none;
-  display: list-item;
-  position: relative;
-}
-
-.main-nav-list li {
-  position: relative;
-}
-
-.main-nav ul ul li {
-  list-style-type: none;
-  padding: 1.5rem 0rem;
-  border-bottom: 1px solid #5c5c5c;
-}
-
-.main-nav ul ul li:last-child {
-  border-bottom: none;
-  padding: 1.5rem 0rem 0rem 0rem;
-}
-
-.main-nav ul ul li:first-child {
-  padding-top: 0rem;
-}
-
-.main-nav ul ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.4rem;
-  font-family: "Roboto Condensed";
 }
